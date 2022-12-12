@@ -1,0 +1,18 @@
+Part     Value                   Package
+
+C1       100uF                   
+DISPLAY  DISPLAY-OLED-128X64-I2C 
+IC1      UT62256SLC              SOP28
+IC2      XC95144XL_TQ100	     TQ100
+LED1     SD                      LED3MM
+LED2     RAM                     LED3MM
+R1       680                     R-EU_0204/7
+R2       680                     R-EU_0204/7
+R3       100                     R-EU_0204/7
+R4       NO INSTALAR             R-EU_0204/7
+R5       NO INSTALAR             R-EU_0204/7
+S1..A6   PUSH BUTTONS            Height = 11mm
+SP1      BUZZER 5V               TMB12A05
+U$2      ARDUINO_MEGA2560_PRO    
+U$3      MICRO-SD-MODULE         
+VREG1    AMS1117-3.3             SOT223

@@ -1,0 +1,452 @@
+<html><head><link type='text/css' href='style.css' rel='stylesheet'></head><body class='pgBgnd'>
+<h3 align='center'>Equations</h3>
+<table width='90%' align='center' border='1' cellpadding='0' cellspacing='0'>
+<tr><td>
+</td></tr><tr><td>
+********** Mapped Logic **********
+</td></tr><tr><td>
+</td></tr><tr><td>
+$OpTx$RAMWE_OBUF$Q_INV$62 <= ((PAGEMODE(2) AND NOT PAGEMODE(0) AND NOT ARDWE)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND NOT ARDWE AND PAGEMODE(1)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+ARDD_I(0) <= ((PAGEMODE(2) AND NOT PAGEMODE(0) AND PAGEMODE(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT ARDA(1) AND ARDA(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND PAGEMODE(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT ARDA(1) AND BUSD(6).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND PAGEMODE(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	ARDA(1) AND NOT ARDA(0) AND BUSA(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT PAGEMODE(1) AND RAMD(7).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND PAGEMODE(0) AND RAMD(7).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT PAGEMODE(2) AND NOT PAGEMODE(0) AND RAMD(7).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT PAGEMODE(2) AND PAGEMODE(0) AND PAGEMODE(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	bankvp(0)));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ARDD(0) <= ARDD_I(0) when ARDD_OE(0) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ARDD_OE(0) <= ARDWE;
+</td></tr><tr><td>
+</td></tr><tr><td>
+ARDD_I(1) <= ((NOT PAGEMODE(2) AND PAGEMODE(0) AND PAGEMODE(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	bankvp(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND PAGEMODE(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	ARDA(1) AND ARDA(0) AND BUSWR)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND PAGEMODE(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	ARDA(1) AND NOT ARDA(0) AND BUSA(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND PAGEMODE(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT ARDA(1) AND ARDA(0) AND BUSA(9))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND PAGEMODE(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT ARDA(1) AND NOT ARDA(0) AND BUSD(5).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT PAGEMODE(1) AND RAMD(6).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND PAGEMODE(0) AND RAMD(6).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT PAGEMODE(2) AND NOT PAGEMODE(0) AND RAMD(6).PIN));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ARDD(1) <= ARDD_I(1) when ARDD_OE(1) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ARDD_OE(1) <= ARDWE;
+</td></tr><tr><td>
+</td></tr><tr><td>
+ARDD_I(2) <= ((ARDD_out(1).EXP)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND PAGEMODE(0) AND RAMD(5).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT PAGEMODE(2) AND NOT PAGEMODE(0) AND RAMD(5).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT PAGEMODE(2) AND PAGEMODE(0) AND PAGEMODE(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	bankvp(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND PAGEMODE(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	ARDA(1) AND NOT ARDA(0) AND BUSA(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND PAGEMODE(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT ARDA(1) AND NOT ARDA(0) AND BUSD(4).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT PAGEMODE(1) AND RAMD(5).PIN));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ARDD(2) <= ARDD_I(2) when ARDD_OE(2) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ARDD_OE(2) <= ARDWE;
+</td></tr><tr><td>
+</td></tr><tr><td>
+ARDD_I(3) <= ((PAGEMODE(2) AND NOT PAGEMODE(0) AND PAGEMODE(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	ARDA(1) AND NOT ARDA(0) AND BUSA(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND PAGEMODE(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT ARDA(1) AND ARDA(0) AND P10)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND PAGEMODE(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT ARDA(1) AND NOT ARDA(0) AND BUSD(3).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (RAMD(4).PIN AND NOT PAGEMODE(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND PAGEMODE(0) AND RAMD(4).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT PAGEMODE(2) AND NOT PAGEMODE(0) AND RAMD(4).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT PAGEMODE(2) AND PAGEMODE(0) AND PAGEMODE(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	bankvp(3)));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ARDD(3) <= ARDD_I(3) when ARDD_OE(3) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ARDD_OE(3) <= ARDWE;
+</td></tr><tr><td>
+</td></tr><tr><td>
+ARDD_I(4) <= NOT (((PAGEMODE(2) AND NOT PAGEMODE(0) AND NOT P11 AND PAGEMODE(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT ARDA(1) AND ARDA(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND PAGEMODE(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT BUSD(2).PIN AND NOT ARDA(1) AND NOT ARDA(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND PAGEMODE(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	ARDA(1) AND NOT ARDA(0) AND NOT BUSA(5))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT RAMD(3).PIN AND NOT PAGEMODE(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND PAGEMODE(0) AND NOT RAMD(3).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT PAGEMODE(2) AND NOT PAGEMODE(0) AND NOT RAMD(3).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT PAGEMODE(2) AND PAGEMODE(0) AND PAGEMODE(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT bankvp(4))));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ARDD(4) <= ARDD_I(4) when ARDD_OE(4) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ARDD_OE(4) <= ARDWE;
+</td></tr><tr><td>
+</td></tr><tr><td>
+ARDD_I(5) <= ((PAGEMODE(2) AND NOT PAGEMODE(0) AND EXTRAM AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	PAGEMODE(1) AND ARDA(1) AND ARDA(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND PAGEMODE(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	ARDA(1) AND NOT ARDA(0) AND BUSA(7))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND PAGEMODE(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT ARDA(1) AND ARDA(0) AND P14)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND PAGEMODE(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT ARDA(1) AND NOT ARDA(0) AND BUSD(1).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (RAMD(2).PIN AND NOT PAGEMODE(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND PAGEMODE(0) AND RAMD(2).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT PAGEMODE(2) AND NOT PAGEMODE(0) AND RAMD(2).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT PAGEMODE(2) AND PAGEMODE(0) AND PAGEMODE(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	bankvp(5)));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ARDD(5) <= ARDD_I(5) when ARDD_OE(5) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ARDD_OE(5) <= ARDWE;
+</td></tr><tr><td>
+</td></tr><tr><td>
+ARDD_I(6) <= ((PAGEMODE(2) AND NOT PAGEMODE(0) AND PAGEMODE(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	ARDA(1) AND ARDA(0) AND PSEN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND PAGEMODE(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	ARDA(1) AND NOT ARDA(0) AND BUSA(6))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND PAGEMODE(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT ARDA(1) AND ARDA(0) AND BUSA(10))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND PAGEMODE(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT ARDA(1) AND NOT ARDA(0) AND BUSD(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (RAMD(1).PIN AND NOT PAGEMODE(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND PAGEMODE(0) AND RAMD(1).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT PAGEMODE(2) AND NOT PAGEMODE(0) AND RAMD(1).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT PAGEMODE(2) AND PAGEMODE(0) AND PAGEMODE(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	bankvp(6)));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ARDD(6) <= ARDD_I(6) when ARDD_OE(6) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ARDD_OE(6) <= ARDWE;
+</td></tr><tr><td>
+</td></tr><tr><td>
+ARDD_I(7) <= ((EXP16_.EXP)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT PAGEMODE(1) AND RAMD(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND PAGEMODE(0) AND RAMD(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT PAGEMODE(2) AND NOT PAGEMODE(0) AND RAMD(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT PAGEMODE(2) AND PAGEMODE(0) AND PAGEMODE(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	bankvp(7))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND PAGEMODE(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	ARDA(1) AND NOT ARDA(0) AND BUSA(8)));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ARDD(7) <= ARDD_I(7) when ARDD_OE(7) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ARDD_OE(7) <= ARDWE;
+</td></tr><tr><td>
+</td></tr><tr><td>
+BUSD_I(0) <= ((PAGEMODE(2) AND NOT PAGEMODE(0) AND NOT PAGEMODE(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	BUSA(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT PAGEMODE(2) AND RAMD(7).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(0) AND NOT PAGEMODE(1) AND RAMD(7).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT PAGEMODE(0) AND PAGEMODE(1) AND RAMD(7).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND PAGEMODE(0) AND PAGEMODE(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	BUSA(0)));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BUSD(0) <= BUSD_I(0) when BUSD_OE(0) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BUSD_OE(0) <= BUSD_out(7)/BUSD_out(7)_TRST;
+</td></tr><tr><td>
+</td></tr><tr><td>
+BUSD_I(1) <= ((PAGEMODE(2) AND NOT PAGEMODE(0) AND NOT PAGEMODE(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	BUSA(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT PAGEMODE(2) AND RAMD(6).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(0) AND NOT PAGEMODE(1) AND RAMD(6).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT PAGEMODE(0) AND PAGEMODE(1) AND RAMD(6).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND PAGEMODE(0) AND PAGEMODE(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	BUSA(0)));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BUSD(1) <= BUSD_I(1) when BUSD_OE(1) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BUSD_OE(1) <= BUSD_out(7)/BUSD_out(7)_TRST;
+</td></tr><tr><td>
+</td></tr><tr><td>
+BUSD_I(2) <= ((PAGEMODE(2) AND NOT PAGEMODE(0) AND NOT PAGEMODE(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT BUSA(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT PAGEMODE(2) AND RAMD(5).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(0) AND NOT PAGEMODE(1) AND RAMD(5).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT PAGEMODE(0) AND PAGEMODE(1) AND RAMD(5).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND PAGEMODE(0) AND PAGEMODE(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT BUSA(0)));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BUSD(2) <= BUSD_I(2) when BUSD_OE(2) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BUSD_OE(2) <= BUSD_out(7)/BUSD_out(7)_TRST;
+</td></tr><tr><td>
+</td></tr><tr><td>
+BUSD_I(3) <= ((NOT PAGEMODE(2) AND RAMD(4).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(0) AND RAMD(4).PIN AND NOT PAGEMODE(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT PAGEMODE(0) AND RAMD(4).PIN AND PAGEMODE(1)));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BUSD(3) <= BUSD_I(3) when BUSD_OE(3) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BUSD_OE(3) <= BUSD_out(7)/BUSD_out(7)_TRST;
+</td></tr><tr><td>
+</td></tr><tr><td>
+BUSD_I(4) <= ((NOT PAGEMODE(2) AND RAMD(3).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(0) AND RAMD(3).PIN AND NOT PAGEMODE(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT PAGEMODE(0) AND RAMD(3).PIN AND PAGEMODE(1)));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BUSD(4) <= BUSD_I(4) when BUSD_OE(4) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BUSD_OE(4) <= BUSD_out(7)/BUSD_out(7)_TRST;
+</td></tr><tr><td>
+</td></tr><tr><td>
+BUSD_I(5) <= ((NOT PAGEMODE(2) AND RAMD(2).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(0) AND RAMD(2).PIN AND NOT PAGEMODE(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT PAGEMODE(0) AND RAMD(2).PIN AND PAGEMODE(1)));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BUSD(5) <= BUSD_I(5) when BUSD_OE(5) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BUSD_OE(5) <= BUSD_out(7)/BUSD_out(7)_TRST;
+</td></tr><tr><td>
+</td></tr><tr><td>
+BUSD_I(6) <= ((RAMD(1).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND PAGEMODE(0) AND PAGEMODE(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND NOT PAGEMODE(1)));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BUSD(6) <= BUSD_I(6) when BUSD_OE(6) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BUSD_OE(6) <= BUSD_out(7)/BUSD_out(7)_TRST;
+</td></tr><tr><td>
+</td></tr><tr><td>
+BUSD_I(7) <= ((PAGEMODE(2) AND NOT PAGEMODE(0) AND NOT PAGEMODE(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	BUSA(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT PAGEMODE(2) AND RAMD(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(0) AND NOT PAGEMODE(1) AND RAMD(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT PAGEMODE(0) AND PAGEMODE(1) AND RAMD(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND PAGEMODE(0) AND PAGEMODE(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	BUSA(0)));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BUSD(7) <= BUSD_I(7) when BUSD_OE(7) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BUSD_OE(7) <= BUSD_out(7)/BUSD_out(7)_TRST;
+</td></tr><tr><td>
+</td></tr><tr><td>
+BUSD_out(7)/BUSD_out(7)_TRST <= ((NOT PAGEMODE(2) AND NOT PSEN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(0) AND NOT PSEN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT PAGEMODE(1) AND NOT PSEN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND PAGEMODE(0) AND P11 AND EXTRAM AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT PAGEMODE(1)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+RAMA(0) <= ((NOT PAGEMODE(2) AND BUSA(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND ARDA(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND PAGEMODE(1) AND ARDA(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(0) AND NOT PAGEMODE(1) AND BUSA(0)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+RAMA(1) <= ((NOT PAGEMODE(2) AND BUSA(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND ARDA(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND PAGEMODE(1) AND ARDA(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(0) AND NOT PAGEMODE(1) AND BUSA(1)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+RAMA(2) <= ((NOT PAGEMODE(2) AND BUSA(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND ARDA(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND PAGEMODE(1) AND ARDA(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(0) AND NOT PAGEMODE(1) AND BUSA(2)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+RAMA(3) <= ((NOT PAGEMODE(2) AND BUSA(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND ARDA(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND PAGEMODE(1) AND ARDA(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(0) AND NOT PAGEMODE(1) AND BUSA(3)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+RAMA(4) <= ((NOT PAGEMODE(2) AND BUSA(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND ARDA(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND PAGEMODE(1) AND ARDA(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(0) AND NOT PAGEMODE(1) AND BUSA(4)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+RAMA(5) <= ((NOT PAGEMODE(2) AND BUSA(5))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND ARDA(5))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND PAGEMODE(1) AND ARDA(5))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(0) AND NOT PAGEMODE(1) AND BUSA(5)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+RAMA(6) <= ((NOT PAGEMODE(2) AND BUSA(6))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND ARDA(6))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND PAGEMODE(1) AND ARDA(6))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(0) AND NOT PAGEMODE(1) AND BUSA(6)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+RAMA(7) <= ((NOT PAGEMODE(2) AND BUSA(7))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND ARDA(7))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND PAGEMODE(1) AND ARDA(7))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(0) AND NOT PAGEMODE(1) AND BUSA(7)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+RAMA(8) <= ((NOT PAGEMODE(2) AND BUSA(8))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND ARDA(8))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND PAGEMODE(1) AND ARDA(8))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(0) AND NOT PAGEMODE(1) AND BUSA(8)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+RAMA(9) <= ((NOT PAGEMODE(2) AND BUSA(9))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND ARDA(9))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND PAGEMODE(1) AND ARDA(9))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(0) AND NOT PAGEMODE(1) AND BUSA(9)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+RAMA(10) <= ((NOT PAGEMODE(2) AND NOT PAGEMODE(0) AND PAGEMODE(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	BUSA(10))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND ARDA(10))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND PAGEMODE(1) AND ARDA(10))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT PAGEMODE(2) AND PAGEMODE(0) AND BUSA(11))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT PAGEMODE(2) AND NOT PAGEMODE(1) AND BUSA(11))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND PAGEMODE(0) AND NOT PAGEMODE(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	BUSA(10)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+RAMA(11) <= ((NOT PAGEMODE(2) AND NOT PAGEMODE(0) AND PAGEMODE(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	BUSA(11))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT PAGEMODE(2) AND PAGEMODE(0) AND NOT PAGEMODE(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	bankvp(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND ARDA(11))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND PAGEMODE(1) AND ARDA(11))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT PAGEMODE(2) AND PAGEMODE(0) AND P10)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT PAGEMODE(2) AND NOT PAGEMODE(1) AND P10)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND PAGEMODE(0) AND NOT PAGEMODE(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	BUSA(11)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+RAMA(12) <= NOT (((NOT PAGEMODE(2) AND NOT PAGEMODE(0) AND PAGEMODE(1) AND NOT P10)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND NOT ARDA(12))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND PAGEMODE(0) AND NOT PAGEMODE(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT PAGEMODE(2) AND PAGEMODE(0) AND NOT P11 AND PAGEMODE(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT PAGEMODE(2) AND NOT PAGEMODE(0) AND NOT P11 AND NOT PAGEMODE(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(0) AND NOT PAGEMODE(1) AND NOT bankvp(1) AND NOT P10)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+RAMA(13) <= ((PAGEMODE(2) AND NOT PAGEMODE(0) AND ARDA(13))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND PAGEMODE(1) AND ARDA(13))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT PAGEMODE(2) AND PAGEMODE(0) AND NOT PAGEMODE(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	bankvp(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT PAGEMODE(2) AND PAGEMODE(0) AND NOT PAGEMODE(1) AND P10)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT PAGEMODE(2) AND NOT PAGEMODE(0) AND P11 AND PAGEMODE(1)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+RAMA(14) <= ((PAGEMODE(2) AND NOT PAGEMODE(0) AND ARDA(14))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND PAGEMODE(1) AND ARDA(14)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+RAMCS <= '0';
+</td></tr><tr><td>
+</td></tr><tr><td>
+RAMD_I(0) <= ((NOT PAGEMODE(2) AND BUSD(7).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND ARDD(7).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND PAGEMODE(1) AND ARDD(7).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(0) AND NOT PAGEMODE(1) AND BUSD(7).PIN));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RAMD(0) <= RAMD_I(0) when RAMD_OE(0) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RAMD_OE(0) <= $OpTx$RAMWE_OBUF$Q_INV$62;
+</td></tr><tr><td>
+</td></tr><tr><td>
+RAMD_I(1) <= ((NOT PAGEMODE(2) AND BUSD(6).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND ARDD(6).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND PAGEMODE(1) AND ARDD(6).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(0) AND NOT PAGEMODE(1) AND BUSD(6).PIN));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RAMD(1) <= RAMD_I(1) when RAMD_OE(1) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RAMD_OE(1) <= $OpTx$RAMWE_OBUF$Q_INV$62;
+</td></tr><tr><td>
+</td></tr><tr><td>
+RAMD_I(2) <= ((NOT PAGEMODE(2) AND BUSD(5).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND ARDD(5).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND PAGEMODE(1) AND ARDD(5).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(0) AND NOT PAGEMODE(1) AND BUSD(5).PIN));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RAMD(2) <= RAMD_I(2) when RAMD_OE(2) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RAMD_OE(2) <= $OpTx$RAMWE_OBUF$Q_INV$62;
+</td></tr><tr><td>
+</td></tr><tr><td>
+RAMD_I(3) <= ((NOT PAGEMODE(2) AND BUSD(4).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND ARDD(4).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND PAGEMODE(1) AND ARDD(4).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(0) AND NOT PAGEMODE(1) AND BUSD(4).PIN));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RAMD(3) <= RAMD_I(3) when RAMD_OE(3) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RAMD_OE(3) <= $OpTx$RAMWE_OBUF$Q_INV$62;
+</td></tr><tr><td>
+</td></tr><tr><td>
+RAMD_I(4) <= ((NOT PAGEMODE(2) AND BUSD(3).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND ARDD(3).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND PAGEMODE(1) AND ARDD(3).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(0) AND NOT PAGEMODE(1) AND BUSD(3).PIN));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RAMD(4) <= RAMD_I(4) when RAMD_OE(4) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RAMD_OE(4) <= $OpTx$RAMWE_OBUF$Q_INV$62;
+</td></tr><tr><td>
+</td></tr><tr><td>
+RAMD_I(5) <= ((NOT PAGEMODE(2) AND BUSD(2).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND ARDD(2).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND PAGEMODE(1) AND ARDD(2).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(0) AND NOT PAGEMODE(1) AND BUSD(2).PIN));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RAMD(5) <= RAMD_I(5) when RAMD_OE(5) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RAMD_OE(5) <= $OpTx$RAMWE_OBUF$Q_INV$62;
+</td></tr><tr><td>
+</td></tr><tr><td>
+RAMD_I(6) <= ((NOT PAGEMODE(2) AND BUSD(1).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND ARDD(1).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND PAGEMODE(1) AND ARDD(1).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(0) AND NOT PAGEMODE(1) AND BUSD(1).PIN));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RAMD(6) <= RAMD_I(6) when RAMD_OE(6) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RAMD_OE(6) <= $OpTx$RAMWE_OBUF$Q_INV$62;
+</td></tr><tr><td>
+</td></tr><tr><td>
+RAMD_I(7) <= ((NOT PAGEMODE(2) AND BUSD(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND ARDD(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND PAGEMODE(1) AND ARDD(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(0) AND NOT PAGEMODE(1) AND BUSD(0).PIN));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RAMD(7) <= RAMD_I(7) when RAMD_OE(7) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RAMD_OE(7) <= $OpTx$RAMWE_OBUF$Q_INV$62;
+</td></tr><tr><td>
+</td></tr><tr><td>
+RAMOE <= ((NOT PAGEMODE(2) AND PSEN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND ARDOE)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND PAGEMODE(1) AND ARDOE)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(0) AND NOT P11 AND NOT PAGEMODE(1) AND PSEN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(0) AND NOT EXTRAM AND NOT PAGEMODE(1) AND PSEN));
+</td></tr><tr><td>
+</td></tr><tr><td>
+RAMWE <= NOT (((PAGEMODE(2) AND NOT PAGEMODE(0) AND NOT ARDWE)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (PAGEMODE(2) AND NOT ARDWE AND PAGEMODE(1))));
+</td></tr><tr><td>
+FDCPE_bankvp0: FDCPE port map (bankvp(0),BUSD(0).PIN,bankvp_C(0),'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bankvp_C(0) <= NOT ((BUSA(7) AND NOT P14 AND NOT BUSWR));
+</td></tr><tr><td>
+FDCPE_bankvp1: FDCPE port map (bankvp(1),BUSD(1).PIN,bankvp_C(1),'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bankvp_C(1) <= NOT ((BUSA(7) AND NOT P14 AND NOT BUSWR));
+</td></tr><tr><td>
+FDCPE_bankvp2: FDCPE port map (bankvp(2),BUSD(2).PIN,bankvp_C(2),'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bankvp_C(2) <= NOT ((BUSA(7) AND NOT P14 AND NOT BUSWR));
+</td></tr><tr><td>
+FDCPE_bankvp3: FDCPE port map (bankvp(3),BUSD(3).PIN,bankvp_C(3),'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bankvp_C(3) <= NOT ((BUSA(7) AND NOT P14 AND NOT BUSWR));
+</td></tr><tr><td>
+FDCPE_bankvp4: FDCPE port map (bankvp(4),BUSD(4).PIN,bankvp_C(4),'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bankvp_C(4) <= NOT ((BUSA(7) AND NOT P14 AND NOT BUSWR));
+</td></tr><tr><td>
+FDCPE_bankvp5: FDCPE port map (bankvp(5),BUSD(5).PIN,bankvp_C(5),'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bankvp_C(5) <= NOT ((BUSA(7) AND NOT P14 AND NOT BUSWR));
+</td></tr><tr><td>
+FDCPE_bankvp6: FDCPE port map (bankvp(6),BUSD(6).PIN,bankvp_C(6),'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bankvp_C(6) <= NOT ((BUSA(7) AND NOT P14 AND NOT BUSWR));
+</td></tr><tr><td>
+FDCPE_bankvp7: FDCPE port map (bankvp(7),BUSD(7).PIN,bankvp_C(7),'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bankvp_C(7) <= NOT ((BUSA(7) AND NOT P14 AND NOT BUSWR));
+</td></tr><tr><td>
+Register Legend:
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FDCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FTCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LDCP  (Q,D,G,CLR,PRE); 
+</td></tr><tr><td>
+</td></tr>
+</table>
+<form><span class="pgRef"><table width="90%" align="center"><tr>
+<td align="left"><input type="button" onclick="javascript:parent.leftnav.showTop()" onmouseover="window.status='goto top of page'; return true;" onmouseout="window.status=''" value="back to top"></td>
+<td align="right"><input type="button" onclick="window.print()" onmouseover="window.status='print page'; return true;" onmouseout="window.status=''" value="print page"></td>
+</tr></table></span></form>
+</body></html>

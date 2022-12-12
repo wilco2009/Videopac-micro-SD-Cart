@@ -1,0 +1,5 @@
+# begin LFP file C:\Users\aleja\OneDrive\ISEWebpack\videopacSDCart\VideopacSDCart.lfp
+designfile VideopacSDCart.v
+parttype xc95144xl-tq100-10
+bus_delimiter 0;
+set_busdelim_onsave 1;

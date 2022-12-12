@@ -1,0 +1,1131 @@
+ 
+cpldfit:  version P.20131013                        Xilinx Inc.
+                                  Fitter Report
+Design Name: VideopacSDCart                      Date:  7-19-2020,  8:46PM
+Device Used: XC95144XL-10-TQ100
+Fitting Status: Successful
+
+*************************  Mapped Resource Summary  **************************
+
+Macrocells     Product Terms    Function Block   Registers      Pins           
+Used/Tot       Used/Tot         Inps Used/Tot    Used/Tot       Used/Tot       
+52 /144 ( 36%) 243 /720  ( 34%) 158/432 ( 37%)   8  /144 (  6%) 81 /81  (100%)
+
+** Function Block Resources **
+
+Function    Mcells      FB Inps     Pterms      IO          
+Block       Used/Tot    Used/Tot    Used/Tot    Used/Tot    
+FB1          11/18       28/54       48/90      11/11*
+FB2           9/18       21/54       35/90      10/10*
+FB3           6/18       16/54       30/90      10/10*
+FB4           2/18        5/54        4/90      10/10*
+FB5           6/18       14/54       16/90      10/10*
+FB6           3/18       13/54       14/90      10/10*
+FB7           6/18       14/54       24/90      10/10*
+FB8           9/18       47/54       72/90      10/10*
+             -----       -----       -----      -----    
+             52/144     158/432     243/720     81/81 
+
+* - Resource is exhausted
+
+** Global Control Resources **
+
+Global clock net(s) unused.
+Global output enable net(s) unused.
+Global set/reset net(s) unused.
+
+** Pin Resources **
+
+Signal Type    Required     Mapped  |  Pin Type            Used    Total 
+------------------------------------|------------------------------------
+Input         :   39          39    |  I/O              :    73      73
+Output        :   18          18    |  GCK/IO           :     3       3
+Bidirectional :   24          24    |  GTS/IO           :     4       4
+GCK           :    0           0    |  GSR/IO           :     1       1
+GTS           :    0           0    |
+GSR           :    0           0    |
+                 ----        ----
+        Total     81          81
+
+** Power Data **
+
+There are 52 macrocells in high performance mode (MCHP).
+There are 0 macrocells in low power mode (MCLP).
+End of Mapped Resource Summary
+**************************  Errors and Warnings  ***************************
+
+WARNING:Cpld - Unable to retrieve the path to the iSE Project Repository. Will
+   use the default filename of 'VideopacSDCart.ise'.
+WARNING:Cpld:1258 - Invalid constraint 'PULLUP' found in netlist.  The
+   constraint is not supported for targeted device and is ignored.
+WARNING:Cpld:1258 - Invalid constraint 'PULLUP' found in netlist.  The
+   constraint is not supported for targeted device and is ignored.
+WARNING:Cpld:1258 - Invalid constraint 'PULLUP' found in netlist.  The
+   constraint is not supported for targeted device and is ignored.
+WARNING:Cpld:1258 - Invalid constraint 'PULLUP' found in netlist.  The
+   constraint is not supported for targeted device and is ignored.
+WARNING:Cpld:1258 - Invalid constraint 'PULLUP' found in netlist.  The
+   constraint is not supported for targeted device and is ignored.
+WARNING:Cpld:1258 - Invalid constraint 'PULLUP' found in netlist.  The
+   constraint is not supported for targeted device and is ignored.
+WARNING:Cpld:1258 - Invalid constraint 'PULLUP' found in netlist.  The
+   constraint is not supported for targeted device and is ignored.
+WARNING:Cpld:1258 - Invalid constraint 'PULLUP' found in netlist.  The
+   constraint is not supported for targeted device and is ignored.
+WARNING:Cpld:1258 - Invalid constraint 'PULLUP' found in netlist.  The
+   constraint is not supported for targeted device and is ignored.
+WARNING:Cpld:1258 - Invalid constraint 'PULLUP' found in netlist.  The
+   constraint is not supported for targeted device and is ignored.
+WARNING:Cpld:1258 - Invalid constraint 'PULLUP' found in netlist.  The
+   constraint is not supported for targeted device and is ignored.
+WARNING:Cpld:1258 - Invalid constraint 'PULLUP' found in netlist.  The
+   constraint is not supported for targeted device and is ignored.
+WARNING:Cpld:1258 - Invalid constraint 'PULLUP' found in netlist.  The
+   constraint is not supported for targeted device and is ignored.
+WARNING:Cpld:1258 - Invalid constraint 'PULLUP' found in netlist.  The
+   constraint is not supported for targeted device and is ignored.
+*************************  Summary of Mapped Logic  ************************
+
+** 42 Outputs **
+
+Signal                        Total Total Loc     Pin  Pin     Pin     Pwr  Slew Reg Init
+Name                          Pts   Inps          No.  Type    Use     Mode Rate State
+RAMA<4>                       4     5     FB1_2   11   I/O     O       STD  FAST 
+RAMA<11>                      7     7     FB1_3   12   I/O     O       STD  FAST 
+RAMA<3>                       4     5     FB1_5   13   I/O     O       STD  FAST 
+RAMOE                         5     7     FB1_6   14   I/O     O       STD  FAST 
+RAMA<2>                       4     5     FB1_8   15   I/O     O       STD  FAST 
+RAMA<10>                      6     6     FB1_9   16   I/O     O       STD  FAST 
+RAMA<1>                       4     5     FB1_11  17   I/O     O       STD  FAST 
+RAMCS                         0     0     FB1_12  18   I/O     O       STD  FAST 
+RAMA<0>                       4     5     FB1_14  19   I/O     O       STD  FAST 
+RAMD<7>                       5     6     FB1_15  20   I/O     I/O     STD  FAST 
+RAMD<0>                       5     6     FB1_17  22   GCK/I/O I/O     STD  FAST 
+RAMA<14>                      2     4     FB2_5   1    GTS/I/O O       STD  FAST 
+RAMA<12>                      6     7     FB2_6   2    GTS/I/O O       STD  FAST 
+RAMWE                         2     4     FB2_8   3    GTS/I/O O       STD  FAST 
+RAMA<7>                       4     5     FB2_9   4    GTS/I/O O       STD  FAST 
+RAMA<13>                      5     7     FB2_11  6    I/O     O       STD  FAST 
+RAMA<6>                       4     5     FB2_12  7    I/O     O       STD  FAST 
+RAMA<8>                       4     5     FB2_14  8    I/O     O       STD  FAST 
+RAMA<5>                       4     5     FB2_15  9    I/O     O       STD  FAST 
+RAMA<9>                       4     5     FB2_17  10   I/O     O       STD  FAST 
+RAMD<6>                       5     6     FB3_2   23   GCK/I/O I/O     STD  FAST 
+RAMD<1>                       5     6     FB3_5   24   I/O     I/O     STD  FAST 
+RAMD<5>                       5     6     FB3_6   25   I/O     I/O     STD  FAST 
+RAMD<2>                       5     6     FB3_8   27   GCK/I/O I/O     STD  FAST 
+RAMD<4>                       5     6     FB3_9   28   I/O     I/O     STD  FAST 
+RAMD<3>                       5     6     FB3_11  29   I/O     I/O     STD  FAST 
+BUSD<7>                       6     6     FB5_15  46   I/O     I/O     STD  FAST 
+ARDD<0>                       8     10    FB6_2   74   I/O     I/O     STD  FAST 
+BUSD<6>                       4     5     FB7_2   50   I/O     I/O     STD  FAST 
+BUSD<5>                       4     5     FB7_6   53   I/O     I/O     STD  FAST 
+BUSD<4>                       4     5     FB7_9   55   I/O     I/O     STD  FAST 
+BUSD<3>                       4     5     FB7_12  58   I/O     I/O     STD  FAST 
+BUSD<2>                       6     6     FB7_15  60   I/O     I/O     STD  FAST 
+BUSD<1>                       6     6     FB8_2   63   I/O     I/O     STD  FAST 
+BUSD<0>                       6     6     FB8_5   64   I/O     I/O     STD  FAST 
+ARDD<7>                       9     12    FB8_8   66   I/O     I/O     STD  FAST 
+ARDD<6>                       9     12    FB8_9   67   I/O     I/O     STD  FAST 
+ARDD<5>                       9     12    FB8_11  68   I/O     I/O     STD  FAST 
+ARDD<4>                       8     11    FB8_12  70   I/O     I/O     STD  FAST 
+ARDD<3>                       8     11    FB8_14  71   I/O     I/O     STD  FAST 
+
+Signal                        Total Total Loc     Pin  Pin     Pin     Pwr  Slew Reg Init
+Name                          Pts   Inps          No.  Type    Use     Mode Rate State
+ARDD<2>                       8     11    FB8_15  72   I/O     I/O     STD  FAST 
+ARDD<1>                       9     12    FB8_17  73   I/O     I/O     STD  FAST 
+
+** 10 Buried Nodes **
+
+Signal                        Total Total Loc     Pwr  Reg Init
+Name                          Pts   Inps          Mode State
+bankvp<7>                     2     4     FB4_17  STD  SET
+bankvp<6>                     2     4     FB4_18  STD  SET
+bankvp<5>                     2     4     FB5_13  STD  SET
+bankvp<4>                     2     4     FB5_14  STD  SET
+bankvp<3>                     2     4     FB5_16  STD  SET
+bankvp<2>                     2     4     FB5_17  STD  SET
+bankvp<1>                     2     4     FB5_18  STD  SET
+$OpTx$RAMWE_OBUF$Q_INV$62     2     4     FB6_17  STD  
+BUSD_out<7>/BUSD_out<7>_TRST  4     6     FB6_18  STD  
+bankvp<0>                     2     4     FB7_18  STD  SET
+
+** 39 Inputs **
+
+Signal                        Loc     Pin  Pin     Pin     
+Name                                  No.  Type    Use     
+ARDA<0>                       FB2_2   99   GSR/I/O I
+BUSA<9>                       FB3_12  30   I/O     I
+BUSA<8>                       FB3_14  32   I/O     I
+BUSA<11>                      FB3_15  33   I/O     I
+BUSA<6>                       FB3_17  34   I/O     I
+ARDA<10>                      FB4_2   87   I/O     I
+ARDA<9>                       FB4_5   89   I/O     I
+ARDA<8>                       FB4_6   90   I/O     I
+ARDA<7>                       FB4_8   91   I/O     I
+ARDA<6>                       FB4_9   92   I/O     I
+ARDA<5>                       FB4_11  93   I/O     I
+ARDA<4>                       FB4_12  94   I/O     I
+ARDA<3>                       FB4_14  95   I/O     I
+ARDA<2>                       FB4_15  96   I/O     I
+ARDA<1>                       FB4_17  97   I/O     I
+P10                           FB5_2   35   I/O     I
+BUSA<7>                       FB5_5   36   I/O     I
+P11                           FB5_6   37   I/O     I
+BUSA<5>                       FB5_8   39   I/O     I
+P14                           FB5_9   40   I/O     I
+BUSA<4>                       FB5_11  41   I/O     I
+BUSA<10>                      FB5_12  42   I/O     I
+BUSA<3>                       FB5_14  43   I/O     I
+BUSA<2>                       FB5_17  49   I/O     I
+PAGEMODE<0>                   FB6_5   76   I/O     I
+PAGEMODE<1>                   FB6_6   77   I/O     I
+PAGEMODE<2>                   FB6_8   78   I/O     I
+ARDWE                         FB6_9   79   I/O     I
+ARDOE                         FB6_11  80   I/O     I
+ARDA<14>                      FB6_12  81   I/O     I
+ARDA<13>                      FB6_14  82   I/O     I
+ARDA<12>                      FB6_15  85   I/O     I
+ARDA<11>                      FB6_17  86   I/O     I
+BUSA<1>                       FB7_5   52   I/O     I
+BUSA<0>                       FB7_8   54   I/O     I
+PSEN                          FB7_11  56   I/O     I
+EXTRAM                        FB7_14  59   I/O     I
+BUSWR                         FB7_17  61   I/O     I
+T0                            FB8_6   65   I/O     I
+
+Legend:
+Pin No. - ~ - User Assigned
+**************************  Function Block Details  ************************
+Legend:
+Total Pt     - Total product terms used by the macrocell signal
+Imp Pt       - Product terms imported from other macrocells
+Exp Pt       - Product terms exported to other macrocells
+               in direction shown
+Unused Pt    - Unused local product terms remaining in macrocell
+Loc          - Location where logic was mapped in device
+Pin Type/Use - I  - Input             GCK - Global Clock
+               O  - Output            GTS - Global Output Enable
+              (b) - Buried macrocell  GSR - Global Set/Reset
+X            - Signal used as input to the macrocell logic.
+Pin No.      - ~  - User Assigned
+*********************************** FB1  ***********************************
+Number of function block inputs used/remaining:               28/26
+Number of signals used by logic mapping into function block:  28
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB1_1         (b)     
+RAMA<4>               4       0   \/1   0     FB1_2   11    I/O     O
+RAMA<11>              7       2<-   0   0     FB1_3   12    I/O     O
+(unused)              0       0   /\1   4     FB1_4         (b)     (b)
+RAMA<3>               4       0     0   1     FB1_5   13    I/O     O
+RAMOE                 5       0     0   0     FB1_6   14    I/O     O
+(unused)              0       0     0   5     FB1_7         (b)     
+RAMA<2>               4       0   \/1   0     FB1_8   15    I/O     O
+RAMA<10>              6       1<-   0   0     FB1_9   16    I/O     O
+(unused)              0       0     0   5     FB1_10        (b)     
+RAMA<1>               4       0     0   1     FB1_11  17    I/O     O
+RAMCS                 0       0     0   5     FB1_12  18    I/O     O
+(unused)              0       0     0   5     FB1_13        (b)     
+RAMA<0>               4       0     0   1     FB1_14  19    I/O     O
+RAMD<7>               5       0     0   0     FB1_15  20    I/O     I/O
+(unused)              0       0     0   5     FB1_16        (b)     
+RAMD<0>               5       0     0   0     FB1_17  22    GCK/I/O I/O
+(unused)              0       0     0   5     FB1_18        (b)     
+
+Signals Used by Logic in Function Block
+  1: $OpTx$RAMWE_OBUF$Q_INV$62  11: BUSA<10>          20: BUSD<0>.PIN 
+  2: ARDA<0>                    12: BUSA<11>          21: ARDD<7>.PIN 
+  3: ARDA<10>                   13: BUSA<1>           22: P10 
+  4: ARDA<11>                   14: BUSA<2>           23: P11 
+  5: ARDA<1>                    15: BUSA<3>           24: PAGEMODE<0> 
+  6: ARDA<2>                    16: BUSA<4>           25: PAGEMODE<1> 
+  7: ARDA<3>                    17: EXTRAM            26: PAGEMODE<2> 
+  8: ARDA<4>                    18: BUSD<7>.PIN       27: PSEN 
+  9: ARDOE                      19: ARDD<0>.PIN       28: bankvp<0> 
+ 10: BUSA<0>                   
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+RAMA<4>              .......X.......X.......XXX.............. 5
+RAMA<11>             ...X.......X.........X.XXX.X............ 7
+RAMA<3>              ......X.......X........XXX.............. 5
+RAMOE                ........X.......X.....XXXXX............. 7
+RAMA<2>              .....X.......X.........XXX.............. 5
+RAMA<10>             ..X.......XX...........XXX.............. 6
+RAMA<1>              ....X.......X..........XXX.............. 5
+RAMCS                ........................................ 0
+RAMA<0>              .X.......X.............XXX.............. 5
+RAMD<7>              X.................XX...XXX.............. 6
+RAMD<0>              X................X..X..XXX.............. 6
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB2  ***********************************
+Number of function block inputs used/remaining:               21/33
+Number of signals used by logic mapping into function block:  21
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB2_1         (b)     
+(unused)              0       0     0   5     FB2_2   99    GSR/I/O I
+(unused)              0       0     0   5     FB2_3         (b)     
+(unused)              0       0     0   5     FB2_4         (b)     
+RAMA<14>              2       0   \/1   2     FB2_5   1     GTS/I/O O
+RAMA<12>              6       1<-   0   0     FB2_6   2     GTS/I/O O
+(unused)              0       0     0   5     FB2_7         (b)     
+RAMWE                 2       0     0   3     FB2_8   3     GTS/I/O O
+RAMA<7>               4       0     0   1     FB2_9   4     GTS/I/O O
+(unused)              0       0     0   5     FB2_10        (b)     
+RAMA<13>              5       0     0   0     FB2_11  6     I/O     O
+RAMA<6>               4       0     0   1     FB2_12  7     I/O     O
+(unused)              0       0     0   5     FB2_13        (b)     
+RAMA<8>               4       0     0   1     FB2_14  8     I/O     O
+RAMA<5>               4       0     0   1     FB2_15  9     I/O     O
+(unused)              0       0     0   5     FB2_16        (b)     
+RAMA<9>               4       0     0   1     FB2_17  10    I/O     O
+(unused)              0       0     0   5     FB2_18        (b)     
+
+Signals Used by Logic in Function Block
+  1: ARDA<12>           8: ARDA<9>           15: P10 
+  2: ARDA<13>           9: ARDWE             16: P11 
+  3: ARDA<14>          10: BUSA<5>           17: PAGEMODE<0> 
+  4: ARDA<5>           11: BUSA<6>           18: PAGEMODE<1> 
+  5: ARDA<6>           12: BUSA<7>           19: PAGEMODE<2> 
+  6: ARDA<7>           13: BUSA<8>           20: bankvp<1> 
+  7: ARDA<8>           14: BUSA<9>           21: bankvp<2> 
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+RAMA<14>             ..X.............XXX..................... 4
+RAMA<12>             X.............XXXXXX.................... 7
+RAMWE                ........X.......XXX..................... 4
+RAMA<7>              .....X.....X....XXX..................... 5
+RAMA<13>             .X............XXXXX.X................... 7
+RAMA<6>              ....X.....X.....XXX..................... 5
+RAMA<8>              ......X.....X...XXX..................... 5
+RAMA<5>              ...X.....X......XXX..................... 5
+RAMA<9>              .......X.....X..XXX..................... 5
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB3  ***********************************
+Number of function block inputs used/remaining:               16/38
+Number of signals used by logic mapping into function block:  16
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB3_1         (b)     
+RAMD<6>               5       0     0   0     FB3_2   23    GCK/I/O I/O
+(unused)              0       0     0   5     FB3_3         (b)     
+(unused)              0       0     0   5     FB3_4         (b)     
+RAMD<1>               5       0     0   0     FB3_5   24    I/O     I/O
+RAMD<5>               5       0     0   0     FB3_6   25    I/O     I/O
+(unused)              0       0     0   5     FB3_7         (b)     
+RAMD<2>               5       0     0   0     FB3_8   27    GCK/I/O I/O
+RAMD<4>               5       0     0   0     FB3_9   28    I/O     I/O
+(unused)              0       0     0   5     FB3_10        (b)     
+RAMD<3>               5       0     0   0     FB3_11  29    I/O     I/O
+(unused)              0       0     0   5     FB3_12  30    I/O     I
+(unused)              0       0     0   5     FB3_13        (b)     
+(unused)              0       0     0   5     FB3_14  32    I/O     I
+(unused)              0       0     0   5     FB3_15  33    I/O     I
+(unused)              0       0     0   5     FB3_16        (b)     
+(unused)              0       0     0   5     FB3_17  34    I/O     I
+(unused)              0       0     0   5     FB3_18        (b)     
+
+Signals Used by Logic in Function Block
+  1: $OpTx$RAMWE_OBUF$Q_INV$62   7: ARDD<1>.PIN       12: BUSD<1>.PIN 
+  2: ARDD<5>.PIN                 8: BUSD<5>.PIN       13: ARDD<6>.PIN 
+  3: BUSD<6>.PIN                 9: BUSD<4>.PIN       14: PAGEMODE<0> 
+  4: ARDD<4>.PIN                10: BUSD<3>.PIN       15: PAGEMODE<1> 
+  5: ARDD<3>.PIN                11: BUSD<2>.PIN       16: PAGEMODE<2> 
+  6: ARDD<2>.PIN               
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+RAMD<6>              X.....X....X.XXX........................ 6
+RAMD<1>              X.X.........XXXX........................ 6
+RAMD<5>              X....X....X..XXX........................ 6
+RAMD<2>              XX.....X.....XXX........................ 6
+RAMD<4>              X...X....X...XXX........................ 6
+RAMD<3>              X..X....X....XXX........................ 6
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB4  ***********************************
+Number of function block inputs used/remaining:               5/49
+Number of signals used by logic mapping into function block:  5
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB4_1         (b)     
+(unused)              0       0     0   5     FB4_2   87    I/O     I
+(unused)              0       0     0   5     FB4_3         (b)     
+(unused)              0       0     0   5     FB4_4         (b)     
+(unused)              0       0     0   5     FB4_5   89    I/O     I
+(unused)              0       0     0   5     FB4_6   90    I/O     I
+(unused)              0       0     0   5     FB4_7         (b)     
+(unused)              0       0     0   5     FB4_8   91    I/O     I
+(unused)              0       0     0   5     FB4_9   92    I/O     I
+(unused)              0       0     0   5     FB4_10        (b)     
+(unused)              0       0     0   5     FB4_11  93    I/O     I
+(unused)              0       0     0   5     FB4_12  94    I/O     I
+(unused)              0       0     0   5     FB4_13        (b)     
+(unused)              0       0     0   5     FB4_14  95    I/O     I
+(unused)              0       0     0   5     FB4_15  96    I/O     I
+(unused)              0       0     0   5     FB4_16        (b)     
+bankvp<7>             2       0     0   3     FB4_17  97    I/O     I
+bankvp<6>             2       0     0   3     FB4_18        (b)     (b)
+
+Signals Used by Logic in Function Block
+  1: BUSA<7>            3: BUSD<7>.PIN        5: P14 
+  2: BUSWR              4: BUSD<6>.PIN      
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+bankvp<7>            XXX.X................................... 4
+bankvp<6>            XX.XX................................... 4
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB5  ***********************************
+Number of function block inputs used/remaining:               14/40
+Number of signals used by logic mapping into function block:  14
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB5_1         (b)     
+(unused)              0       0     0   5     FB5_2   35    I/O     I
+(unused)              0       0     0   5     FB5_3         (b)     
+(unused)              0       0     0   5     FB5_4         (b)     
+(unused)              0       0     0   5     FB5_5   36    I/O     I
+(unused)              0       0     0   5     FB5_6   37    I/O     I
+(unused)              0       0     0   5     FB5_7         (b)     
+(unused)              0       0     0   5     FB5_8   39    I/O     I
+(unused)              0       0     0   5     FB5_9   40    I/O     I
+(unused)              0       0     0   5     FB5_10        (b)     
+(unused)              0       0     0   5     FB5_11  41    I/O     I
+(unused)              0       0     0   5     FB5_12  42    I/O     I
+bankvp<5>             2       0     0   3     FB5_13        (b)     (b)
+bankvp<4>             2       0   \/1   2     FB5_14  43    I/O     I
+BUSD<7>               6       1<-   0   0     FB5_15  46    I/O     I/O
+bankvp<3>             2       0     0   3     FB5_16        (b)     (b)
+bankvp<2>             2       0     0   3     FB5_17  49    I/O     I
+bankvp<1>             2       0     0   3     FB5_18        (b)     (b)
+
+Signals Used by Logic in Function Block
+  1: BUSA<0>                        6: BUSD<5>.PIN       11: P14 
+  2: BUSA<7>                        7: BUSD<4>.PIN       12: PAGEMODE<0> 
+  3: BUSD_out<7>/BUSD_out<7>_TRST   8: BUSD<3>.PIN       13: PAGEMODE<1> 
+  4: BUSWR                          9: BUSD<2>.PIN       14: PAGEMODE<2> 
+  5: RAMD<0>.PIN                   10: BUSD<1>.PIN      
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+bankvp<5>            .X.X.X....X............................. 4
+bankvp<4>            .X.X..X...X............................. 4
+BUSD<7>              X.X.X......XXX.......................... 6
+bankvp<3>            .X.X...X..X............................. 4
+bankvp<2>            .X.X....X.X............................. 4
+bankvp<1>            .X.X.....XX............................. 4
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB6  ***********************************
+Number of function block inputs used/remaining:               13/41
+Number of signals used by logic mapping into function block:  13
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0   \/2   3     FB6_1         (b)     (b)
+ARDD<0>               8       3<-   0   0     FB6_2   74    I/O     I/O
+(unused)              0       0   /\1   4     FB6_3         (b)     (b)
+(unused)              0       0     0   5     FB6_4         (b)     
+(unused)              0       0     0   5     FB6_5   76    I/O     I
+(unused)              0       0     0   5     FB6_6   77    I/O     I
+(unused)              0       0     0   5     FB6_7         (b)     
+(unused)              0       0     0   5     FB6_8   78    I/O     I
+(unused)              0       0     0   5     FB6_9   79    I/O     I
+(unused)              0       0     0   5     FB6_10        (b)     
+(unused)              0       0     0   5     FB6_11  80    I/O     I
+(unused)              0       0     0   5     FB6_12  81    I/O     I
+(unused)              0       0     0   5     FB6_13        (b)     
+(unused)              0       0     0   5     FB6_14  82    I/O     I
+(unused)              0       0     0   5     FB6_15  85    I/O     I
+(unused)              0       0     0   5     FB6_16        (b)     
+$OpTx$RAMWE_OBUF$Q_INV$62
+                      2       0     0   3     FB6_17  86    I/O     I
+BUSD_out<7>/BUSD_out<7>_TRST
+                      4       0     0   1     FB6_18        (b)     (b)
+
+Signals Used by Logic in Function Block
+  1: ARDA<0>            6: BUSD<6>.PIN       10: PAGEMODE<1> 
+  2: ARDA<1>            7: RAMD<7>.PIN       11: PAGEMODE<2> 
+  3: ARDWE              8: P11               12: PSEN 
+  4: BUSA<1>            9: PAGEMODE<0>       13: bankvp<0> 
+  5: EXTRAM           
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+ARDD<0>              XXXX.XX.XXX.X........................... 10
+$OpTx$RAMWE_OBUF$Q_INV$62 
+                     ..X.....XXX............................. 4
+BUSD_out<7>/BUSD_out<7>_TRST 
+                     ....X..XXXXX............................ 6
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB7  ***********************************
+Number of function block inputs used/remaining:               14/40
+Number of signals used by logic mapping into function block:  14
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB7_1         (b)     
+BUSD<6>               4       0     0   1     FB7_2   50    I/O     I/O
+(unused)              0       0     0   5     FB7_3         (b)     
+(unused)              0       0     0   5     FB7_4         (b)     
+(unused)              0       0     0   5     FB7_5   52    I/O     I
+BUSD<5>               4       0     0   1     FB7_6   53    I/O     I/O
+(unused)              0       0     0   5     FB7_7         (b)     
+(unused)              0       0     0   5     FB7_8   54    I/O     I
+BUSD<4>               4       0     0   1     FB7_9   55    I/O     I/O
+(unused)              0       0     0   5     FB7_10        (b)     
+(unused)              0       0     0   5     FB7_11  56    I/O     I
+BUSD<3>               4       0     0   1     FB7_12  58    I/O     I/O
+(unused)              0       0     0   5     FB7_13        (b)     
+(unused)              0       0   \/1   4     FB7_14  59    I/O     I
+BUSD<2>               6       1<-   0   0     FB7_15  60    I/O     I/O
+(unused)              0       0     0   5     FB7_16        (b)     
+(unused)              0       0     0   5     FB7_17  61    I/O     I
+bankvp<0>             2       0     0   3     FB7_18        (b)     (b)
+
+Signals Used by Logic in Function Block
+  1: BUSA<0>                        6: RAMD<2>.PIN       11: P14 
+  2: BUSA<7>                        7: RAMD<3>.PIN       12: PAGEMODE<0> 
+  3: BUSD_out<7>/BUSD_out<7>_TRST   8: RAMD<4>.PIN       13: PAGEMODE<1> 
+  4: BUSWR                          9: RAMD<5>.PIN       14: PAGEMODE<2> 
+  5: RAMD<1>.PIN                   10: BUSD<0>.PIN      
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+BUSD<6>              ..X.X......XXX.......................... 5
+BUSD<5>              ..X..X.....XXX.......................... 5
+BUSD<4>              ..X...X....XXX.......................... 5
+BUSD<3>              ..X....X...XXX.......................... 5
+BUSD<2>              X.X.....X..XXX.......................... 6
+bankvp<0>            .X.X.....XX............................. 4
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB8  ***********************************
+Number of function block inputs used/remaining:               47/7
+Number of signals used by logic mapping into function block:  47
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0   \/1   4     FB8_1         (b)     (b)
+BUSD<1>               6       1<-   0   0     FB8_2   63    I/O     I/O
+(unused)              0       0     0   5     FB8_3         (b)     
+(unused)              0       0   \/1   4     FB8_4         (b)     (b)
+BUSD<0>               6       1<-   0   0     FB8_5   64    I/O     I/O
+(unused)              0       0   \/3   2     FB8_6   65    I/O     I
+(unused)              0       0   \/5   0     FB8_7         (b)     (b)
+ARDD<7>               9       8<- \/4   0     FB8_8   66    I/O     I/O
+ARDD<6>               9       4<-   0   0     FB8_9   67    I/O     I/O
+(unused)              0       0   \/4   1     FB8_10        (b)     (b)
+ARDD<5>               9       4<-   0   0     FB8_11  68    I/O     I/O
+ARDD<4>               8       3<-   0   0     FB8_12  70    I/O     I/O
+(unused)              0       0   /\3   2     FB8_13        (b)     (b)
+ARDD<3>               8       3<-   0   0     FB8_14  71    I/O     I/O
+ARDD<2>               8       6<- /\3   0     FB8_15  72    I/O     I/O
+(unused)              0       0   /\5   0     FB8_16        (b)     (b)
+ARDD<1>               9       5<- /\1   0     FB8_17  73    I/O     I/O
+(unused)              0       0   /\5   0     FB8_18        (b)     (b)
+
+Signals Used by Logic in Function Block
+  1: ARDA<0>                       17: EXTRAM            33: P10 
+  2: ARDA<1>                       18: BUSD<7>.PIN       34: P11 
+  3: ARDWE                         19: RAMD<0>.PIN       35: P14 
+  4: BUSA<0>                       20: RAMD<1>.PIN       36: PAGEMODE<0> 
+  5: BUSA<10>                      21: RAMD<2>.PIN       37: PAGEMODE<1> 
+  6: BUSA<11>                      22: RAMD<3>.PIN       38: PAGEMODE<2> 
+  7: BUSA<2>                       23: BUSD<5>.PIN       39: PSEN 
+  8: BUSA<3>                       24: RAMD<4>.PIN       40: T0 
+  9: BUSA<4>                       25: RAMD<5>.PIN       41: bankvp<1> 
+ 10: BUSA<5>                       26: RAMD<6>.PIN       42: bankvp<2> 
+ 11: BUSA<6>                       27: RAMD<7>.PIN       43: bankvp<3> 
+ 12: BUSA<7>                       28: BUSD<4>.PIN       44: bankvp<4> 
+ 13: BUSA<8>                       29: BUSD<3>.PIN       45: bankvp<5> 
+ 14: BUSA<9>                       30: BUSD<2>.PIN       46: bankvp<6> 
+ 15: BUSD_out<7>/BUSD_out<7>_TRST  31: BUSD<1>.PIN       47: bankvp<7> 
+ 16: BUSWR                         32: BUSD<0>.PIN      
+
+Signal                        1         2         3         4         5 FB
+Name                0----+----0----+----0----+----0----+----0----+----0 Inputs
+BUSD<1>              ...X..........X..........X.........XXX............ 6
+BUSD<0>              ...X..........X...........X........XXX............ 6
+ARDD<7>              XXXX........X....XX................XXX.X......X... 12
+ARDD<6>              XXX.X.....X........X...........X...XXXX......X.... 12
+ARDD<5>              XXX........X....X...X.........X...XXXX......X..... 12
+ARDD<4>              XXX......X...........X.......X...X.XXX.....X...... 11
+ARDD<3>              XXX.....X..............X....X...X..XXX....X....... 11
+ARDD<2>              XXX..X.X................X..X.......XXX...X........ 11
+ARDD<1>              XXX...X......X.X......X..X.........XXX..X......... 12
+                    0----+----1----+----2----+----3----+----4----+----5
+                              0         0         0         0         0
+*******************************  Equations  ********************************
+
+********** Mapped Logic **********
+
+
+$OpTx$RAMWE_OBUF$Q_INV$62 <= ((PAGEMODE(2) AND NOT PAGEMODE(0) AND NOT ARDWE)
+	OR (PAGEMODE(2) AND NOT ARDWE AND PAGEMODE(1)));
+
+
+ARDD_I(0) <= ((PAGEMODE(2) AND NOT PAGEMODE(0) AND PAGEMODE(1) AND 
+	NOT ARDA(1) AND ARDA(0))
+	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND PAGEMODE(1) AND 
+	NOT ARDA(1) AND BUSD(6).PIN)
+	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND PAGEMODE(1) AND 
+	ARDA(1) AND NOT ARDA(0) AND BUSA(1))
+	OR (NOT PAGEMODE(1) AND RAMD(7).PIN)
+	OR (PAGEMODE(2) AND PAGEMODE(0) AND RAMD(7).PIN)
+	OR (NOT PAGEMODE(2) AND NOT PAGEMODE(0) AND RAMD(7).PIN)
+	OR (NOT PAGEMODE(2) AND PAGEMODE(0) AND PAGEMODE(1) AND 
+	bankvp(0)));
+ARDD(0) <= ARDD_I(0) when ARDD_OE(0) = '1' else 'Z';
+ARDD_OE(0) <= ARDWE;
+
+
+ARDD_I(1) <= ((NOT PAGEMODE(2) AND PAGEMODE(0) AND PAGEMODE(1) AND 
+	bankvp(1))
+	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND PAGEMODE(1) AND 
+	ARDA(1) AND ARDA(0) AND BUSWR)
+	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND PAGEMODE(1) AND 
+	ARDA(1) AND NOT ARDA(0) AND BUSA(2))
+	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND PAGEMODE(1) AND 
+	NOT ARDA(1) AND ARDA(0) AND BUSA(9))
+	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND PAGEMODE(1) AND 
+	NOT ARDA(1) AND NOT ARDA(0) AND BUSD(5).PIN)
+	OR (NOT PAGEMODE(1) AND RAMD(6).PIN)
+	OR (PAGEMODE(2) AND PAGEMODE(0) AND RAMD(6).PIN)
+	OR (NOT PAGEMODE(2) AND NOT PAGEMODE(0) AND RAMD(6).PIN));
+ARDD(1) <= ARDD_I(1) when ARDD_OE(1) = '1' else 'Z';
+ARDD_OE(1) <= ARDWE;
+
+
+ARDD_I(2) <= ((ARDD_out(1).EXP)
+	OR (PAGEMODE(2) AND PAGEMODE(0) AND RAMD(5).PIN)
+	OR (NOT PAGEMODE(2) AND NOT PAGEMODE(0) AND RAMD(5).PIN)
+	OR (NOT PAGEMODE(2) AND PAGEMODE(0) AND PAGEMODE(1) AND 
+	bankvp(2))
+	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND PAGEMODE(1) AND 
+	ARDA(1) AND NOT ARDA(0) AND BUSA(3))
+	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND PAGEMODE(1) AND 
+	NOT ARDA(1) AND NOT ARDA(0) AND BUSD(4).PIN)
+	OR (NOT PAGEMODE(1) AND RAMD(5).PIN));
+ARDD(2) <= ARDD_I(2) when ARDD_OE(2) = '1' else 'Z';
+ARDD_OE(2) <= ARDWE;
+
+
+ARDD_I(3) <= ((PAGEMODE(2) AND NOT PAGEMODE(0) AND PAGEMODE(1) AND 
+	ARDA(1) AND NOT ARDA(0) AND BUSA(4))
+	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND PAGEMODE(1) AND 
+	NOT ARDA(1) AND ARDA(0) AND P10)
+	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND PAGEMODE(1) AND 
+	NOT ARDA(1) AND NOT ARDA(0) AND BUSD(3).PIN)
+	OR (RAMD(4).PIN AND NOT PAGEMODE(1))
+	OR (PAGEMODE(2) AND PAGEMODE(0) AND RAMD(4).PIN)
+	OR (NOT PAGEMODE(2) AND NOT PAGEMODE(0) AND RAMD(4).PIN)
+	OR (NOT PAGEMODE(2) AND PAGEMODE(0) AND PAGEMODE(1) AND 
+	bankvp(3)));
+ARDD(3) <= ARDD_I(3) when ARDD_OE(3) = '1' else 'Z';
+ARDD_OE(3) <= ARDWE;
+
+
+ARDD_I(4) <= NOT (((PAGEMODE(2) AND NOT PAGEMODE(0) AND NOT P11 AND PAGEMODE(1) AND 
+	NOT ARDA(1) AND ARDA(0))
+	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND PAGEMODE(1) AND 
+	NOT BUSD(2).PIN AND NOT ARDA(1) AND NOT ARDA(0))
+	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND PAGEMODE(1) AND 
+	ARDA(1) AND NOT ARDA(0) AND NOT BUSA(5))
+	OR (NOT RAMD(3).PIN AND NOT PAGEMODE(1))
+	OR (PAGEMODE(2) AND PAGEMODE(0) AND NOT RAMD(3).PIN)
+	OR (NOT PAGEMODE(2) AND NOT PAGEMODE(0) AND NOT RAMD(3).PIN)
+	OR (NOT PAGEMODE(2) AND PAGEMODE(0) AND PAGEMODE(1) AND 
+	NOT bankvp(4))));
+ARDD(4) <= ARDD_I(4) when ARDD_OE(4) = '1' else 'Z';
+ARDD_OE(4) <= ARDWE;
+
+
+ARDD_I(5) <= ((PAGEMODE(2) AND NOT PAGEMODE(0) AND EXTRAM AND 
+	PAGEMODE(1) AND ARDA(1) AND ARDA(0))
+	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND PAGEMODE(1) AND 
+	ARDA(1) AND NOT ARDA(0) AND BUSA(7))
+	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND PAGEMODE(1) AND 
+	NOT ARDA(1) AND ARDA(0) AND P14)
+	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND PAGEMODE(1) AND 
+	NOT ARDA(1) AND NOT ARDA(0) AND BUSD(1).PIN)
+	OR (RAMD(2).PIN AND NOT PAGEMODE(1))
+	OR (PAGEMODE(2) AND PAGEMODE(0) AND RAMD(2).PIN)
+	OR (NOT PAGEMODE(2) AND NOT PAGEMODE(0) AND RAMD(2).PIN)
+	OR (NOT PAGEMODE(2) AND PAGEMODE(0) AND PAGEMODE(1) AND 
+	bankvp(5)));
+ARDD(5) <= ARDD_I(5) when ARDD_OE(5) = '1' else 'Z';
+ARDD_OE(5) <= ARDWE;
+
+
+ARDD_I(6) <= ((PAGEMODE(2) AND NOT PAGEMODE(0) AND PAGEMODE(1) AND 
+	ARDA(1) AND ARDA(0) AND PSEN)
+	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND PAGEMODE(1) AND 
+	ARDA(1) AND NOT ARDA(0) AND BUSA(6))
+	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND PAGEMODE(1) AND 
+	NOT ARDA(1) AND ARDA(0) AND BUSA(10))
+	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND PAGEMODE(1) AND 
+	NOT ARDA(1) AND NOT ARDA(0) AND BUSD(0).PIN)
+	OR (RAMD(1).PIN AND NOT PAGEMODE(1))
+	OR (PAGEMODE(2) AND PAGEMODE(0) AND RAMD(1).PIN)
+	OR (NOT PAGEMODE(2) AND NOT PAGEMODE(0) AND RAMD(1).PIN)
+	OR (NOT PAGEMODE(2) AND PAGEMODE(0) AND PAGEMODE(1) AND 
+	bankvp(6)));
+ARDD(6) <= ARDD_I(6) when ARDD_OE(6) = '1' else 'Z';
+ARDD_OE(6) <= ARDWE;
+
+
+ARDD_I(7) <= ((EXP16_.EXP)
+	OR (NOT PAGEMODE(1) AND RAMD(0).PIN)
+	OR (PAGEMODE(2) AND PAGEMODE(0) AND RAMD(0).PIN)
+	OR (NOT PAGEMODE(2) AND NOT PAGEMODE(0) AND RAMD(0).PIN)
+	OR (NOT PAGEMODE(2) AND PAGEMODE(0) AND PAGEMODE(1) AND 
+	bankvp(7))
+	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND PAGEMODE(1) AND 
+	ARDA(1) AND NOT ARDA(0) AND BUSA(8)));
+ARDD(7) <= ARDD_I(7) when ARDD_OE(7) = '1' else 'Z';
+ARDD_OE(7) <= ARDWE;
+
+
+BUSD_I(0) <= ((PAGEMODE(2) AND NOT PAGEMODE(0) AND NOT PAGEMODE(1) AND 
+	BUSA(0))
+	OR (NOT PAGEMODE(2) AND RAMD(7).PIN)
+	OR (PAGEMODE(0) AND NOT PAGEMODE(1) AND RAMD(7).PIN)
+	OR (NOT PAGEMODE(0) AND PAGEMODE(1) AND RAMD(7).PIN)
+	OR (PAGEMODE(2) AND PAGEMODE(0) AND PAGEMODE(1) AND 
+	BUSA(0)));
+BUSD(0) <= BUSD_I(0) when BUSD_OE(0) = '1' else 'Z';
+BUSD_OE(0) <= BUSD_out(7)/BUSD_out(7)_TRST;
+
+
+BUSD_I(1) <= ((PAGEMODE(2) AND NOT PAGEMODE(0) AND NOT PAGEMODE(1) AND 
+	BUSA(0))
+	OR (NOT PAGEMODE(2) AND RAMD(6).PIN)
+	OR (PAGEMODE(0) AND NOT PAGEMODE(1) AND RAMD(6).PIN)
+	OR (NOT PAGEMODE(0) AND PAGEMODE(1) AND RAMD(6).PIN)
+	OR (PAGEMODE(2) AND PAGEMODE(0) AND PAGEMODE(1) AND 
+	BUSA(0)));
+BUSD(1) <= BUSD_I(1) when BUSD_OE(1) = '1' else 'Z';
+BUSD_OE(1) <= BUSD_out(7)/BUSD_out(7)_TRST;
+
+
+BUSD_I(2) <= ((PAGEMODE(2) AND NOT PAGEMODE(0) AND NOT PAGEMODE(1) AND 
+	NOT BUSA(0))
+	OR (NOT PAGEMODE(2) AND RAMD(5).PIN)
+	OR (PAGEMODE(0) AND NOT PAGEMODE(1) AND RAMD(5).PIN)
+	OR (NOT PAGEMODE(0) AND PAGEMODE(1) AND RAMD(5).PIN)
+	OR (PAGEMODE(2) AND PAGEMODE(0) AND PAGEMODE(1) AND 
+	NOT BUSA(0)));
+BUSD(2) <= BUSD_I(2) when BUSD_OE(2) = '1' else 'Z';
+BUSD_OE(2) <= BUSD_out(7)/BUSD_out(7)_TRST;
+
+
+BUSD_I(3) <= ((NOT PAGEMODE(2) AND RAMD(4).PIN)
+	OR (PAGEMODE(0) AND RAMD(4).PIN AND NOT PAGEMODE(1))
+	OR (NOT PAGEMODE(0) AND RAMD(4).PIN AND PAGEMODE(1)));
+BUSD(3) <= BUSD_I(3) when BUSD_OE(3) = '1' else 'Z';
+BUSD_OE(3) <= BUSD_out(7)/BUSD_out(7)_TRST;
+
+
+BUSD_I(4) <= ((NOT PAGEMODE(2) AND RAMD(3).PIN)
+	OR (PAGEMODE(0) AND RAMD(3).PIN AND NOT PAGEMODE(1))
+	OR (NOT PAGEMODE(0) AND RAMD(3).PIN AND PAGEMODE(1)));
+BUSD(4) <= BUSD_I(4) when BUSD_OE(4) = '1' else 'Z';
+BUSD_OE(4) <= BUSD_out(7)/BUSD_out(7)_TRST;
+
+
+BUSD_I(5) <= ((NOT PAGEMODE(2) AND RAMD(2).PIN)
+	OR (PAGEMODE(0) AND RAMD(2).PIN AND NOT PAGEMODE(1))
+	OR (NOT PAGEMODE(0) AND RAMD(2).PIN AND PAGEMODE(1)));
+BUSD(5) <= BUSD_I(5) when BUSD_OE(5) = '1' else 'Z';
+BUSD_OE(5) <= BUSD_out(7)/BUSD_out(7)_TRST;
+
+
+BUSD_I(6) <= ((RAMD(1).PIN)
+	OR (PAGEMODE(2) AND PAGEMODE(0) AND PAGEMODE(1))
+	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND NOT PAGEMODE(1)));
+BUSD(6) <= BUSD_I(6) when BUSD_OE(6) = '1' else 'Z';
+BUSD_OE(6) <= BUSD_out(7)/BUSD_out(7)_TRST;
+
+
+BUSD_I(7) <= ((PAGEMODE(2) AND NOT PAGEMODE(0) AND NOT PAGEMODE(1) AND 
+	BUSA(0))
+	OR (NOT PAGEMODE(2) AND RAMD(0).PIN)
+	OR (PAGEMODE(0) AND NOT PAGEMODE(1) AND RAMD(0).PIN)
+	OR (NOT PAGEMODE(0) AND PAGEMODE(1) AND RAMD(0).PIN)
+	OR (PAGEMODE(2) AND PAGEMODE(0) AND PAGEMODE(1) AND 
+	BUSA(0)));
+BUSD(7) <= BUSD_I(7) when BUSD_OE(7) = '1' else 'Z';
+BUSD_OE(7) <= BUSD_out(7)/BUSD_out(7)_TRST;
+
+
+BUSD_out(7)/BUSD_out(7)_TRST <= ((NOT PAGEMODE(2) AND NOT PSEN)
+	OR (PAGEMODE(0) AND NOT PSEN)
+	OR (NOT PAGEMODE(1) AND NOT PSEN)
+	OR (PAGEMODE(2) AND PAGEMODE(0) AND P11 AND EXTRAM AND 
+	NOT PAGEMODE(1)));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RAMA(0) <= ((NOT PAGEMODE(2) AND BUSA(0))
+	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND ARDA(0))
+	OR (PAGEMODE(2) AND PAGEMODE(1) AND ARDA(0))
+	OR (PAGEMODE(0) AND NOT PAGEMODE(1) AND BUSA(0)));
+
+
+RAMA(1) <= ((NOT PAGEMODE(2) AND BUSA(1))
+	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND ARDA(1))
+	OR (PAGEMODE(2) AND PAGEMODE(1) AND ARDA(1))
+	OR (PAGEMODE(0) AND NOT PAGEMODE(1) AND BUSA(1)));
+
+
+RAMA(2) <= ((NOT PAGEMODE(2) AND BUSA(2))
+	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND ARDA(2))
+	OR (PAGEMODE(2) AND PAGEMODE(1) AND ARDA(2))
+	OR (PAGEMODE(0) AND NOT PAGEMODE(1) AND BUSA(2)));
+
+
+RAMA(3) <= ((NOT PAGEMODE(2) AND BUSA(3))
+	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND ARDA(3))
+	OR (PAGEMODE(2) AND PAGEMODE(1) AND ARDA(3))
+	OR (PAGEMODE(0) AND NOT PAGEMODE(1) AND BUSA(3)));
+
+
+RAMA(4) <= ((NOT PAGEMODE(2) AND BUSA(4))
+	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND ARDA(4))
+	OR (PAGEMODE(2) AND PAGEMODE(1) AND ARDA(4))
+	OR (PAGEMODE(0) AND NOT PAGEMODE(1) AND BUSA(4)));
+
+
+RAMA(5) <= ((NOT PAGEMODE(2) AND BUSA(5))
+	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND ARDA(5))
+	OR (PAGEMODE(2) AND PAGEMODE(1) AND ARDA(5))
+	OR (PAGEMODE(0) AND NOT PAGEMODE(1) AND BUSA(5)));
+
+
+RAMA(6) <= ((NOT PAGEMODE(2) AND BUSA(6))
+	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND ARDA(6))
+	OR (PAGEMODE(2) AND PAGEMODE(1) AND ARDA(6))
+	OR (PAGEMODE(0) AND NOT PAGEMODE(1) AND BUSA(6)));
+
+
+RAMA(7) <= ((NOT PAGEMODE(2) AND BUSA(7))
+	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND ARDA(7))
+	OR (PAGEMODE(2) AND PAGEMODE(1) AND ARDA(7))
+	OR (PAGEMODE(0) AND NOT PAGEMODE(1) AND BUSA(7)));
+
+
+RAMA(8) <= ((NOT PAGEMODE(2) AND BUSA(8))
+	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND ARDA(8))
+	OR (PAGEMODE(2) AND PAGEMODE(1) AND ARDA(8))
+	OR (PAGEMODE(0) AND NOT PAGEMODE(1) AND BUSA(8)));
+
+
+RAMA(9) <= ((NOT PAGEMODE(2) AND BUSA(9))
+	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND ARDA(9))
+	OR (PAGEMODE(2) AND PAGEMODE(1) AND ARDA(9))
+	OR (PAGEMODE(0) AND NOT PAGEMODE(1) AND BUSA(9)));
+
+
+RAMA(10) <= ((NOT PAGEMODE(2) AND NOT PAGEMODE(0) AND PAGEMODE(1) AND 
+	BUSA(10))
+	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND ARDA(10))
+	OR (PAGEMODE(2) AND PAGEMODE(1) AND ARDA(10))
+	OR (NOT PAGEMODE(2) AND PAGEMODE(0) AND BUSA(11))
+	OR (NOT PAGEMODE(2) AND NOT PAGEMODE(1) AND BUSA(11))
+	OR (PAGEMODE(2) AND PAGEMODE(0) AND NOT PAGEMODE(1) AND 
+	BUSA(10)));
+
+
+RAMA(11) <= ((NOT PAGEMODE(2) AND NOT PAGEMODE(0) AND PAGEMODE(1) AND 
+	BUSA(11))
+	OR (NOT PAGEMODE(2) AND PAGEMODE(0) AND NOT PAGEMODE(1) AND 
+	bankvp(0))
+	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND ARDA(11))
+	OR (PAGEMODE(2) AND PAGEMODE(1) AND ARDA(11))
+	OR (NOT PAGEMODE(2) AND PAGEMODE(0) AND P10)
+	OR (NOT PAGEMODE(2) AND NOT PAGEMODE(1) AND P10)
+	OR (PAGEMODE(2) AND PAGEMODE(0) AND NOT PAGEMODE(1) AND 
+	BUSA(11)));
+
+
+RAMA(12) <= NOT (((NOT PAGEMODE(2) AND NOT PAGEMODE(0) AND PAGEMODE(1) AND NOT P10)
+	OR (PAGEMODE(2) AND NOT ARDA(12))
+	OR (PAGEMODE(2) AND PAGEMODE(0) AND NOT PAGEMODE(1))
+	OR (NOT PAGEMODE(2) AND PAGEMODE(0) AND NOT P11 AND PAGEMODE(1))
+	OR (NOT PAGEMODE(2) AND NOT PAGEMODE(0) AND NOT P11 AND NOT PAGEMODE(1))
+	OR (PAGEMODE(0) AND NOT PAGEMODE(1) AND NOT bankvp(1) AND NOT P10)));
+
+
+RAMA(13) <= ((PAGEMODE(2) AND NOT PAGEMODE(0) AND ARDA(13))
+	OR (PAGEMODE(2) AND PAGEMODE(1) AND ARDA(13))
+	OR (NOT PAGEMODE(2) AND PAGEMODE(0) AND NOT PAGEMODE(1) AND 
+	bankvp(2))
+	OR (NOT PAGEMODE(2) AND PAGEMODE(0) AND NOT PAGEMODE(1) AND P10)
+	OR (NOT PAGEMODE(2) AND NOT PAGEMODE(0) AND P11 AND PAGEMODE(1)));
+
+
+RAMA(14) <= ((PAGEMODE(2) AND NOT PAGEMODE(0) AND ARDA(14))
+	OR (PAGEMODE(2) AND PAGEMODE(1) AND ARDA(14)));
+
+
+RAMCS <= '0';
+
+
+RAMD_I(0) <= ((NOT PAGEMODE(2) AND BUSD(7).PIN)
+	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND ARDD(7).PIN)
+	OR (PAGEMODE(2) AND PAGEMODE(1) AND ARDD(7).PIN)
+	OR (PAGEMODE(0) AND NOT PAGEMODE(1) AND BUSD(7).PIN));
+RAMD(0) <= RAMD_I(0) when RAMD_OE(0) = '1' else 'Z';
+RAMD_OE(0) <= $OpTx$RAMWE_OBUF$Q_INV$62;
+
+
+RAMD_I(1) <= ((NOT PAGEMODE(2) AND BUSD(6).PIN)
+	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND ARDD(6).PIN)
+	OR (PAGEMODE(2) AND PAGEMODE(1) AND ARDD(6).PIN)
+	OR (PAGEMODE(0) AND NOT PAGEMODE(1) AND BUSD(6).PIN));
+RAMD(1) <= RAMD_I(1) when RAMD_OE(1) = '1' else 'Z';
+RAMD_OE(1) <= $OpTx$RAMWE_OBUF$Q_INV$62;
+
+
+RAMD_I(2) <= ((NOT PAGEMODE(2) AND BUSD(5).PIN)
+	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND ARDD(5).PIN)
+	OR (PAGEMODE(2) AND PAGEMODE(1) AND ARDD(5).PIN)
+	OR (PAGEMODE(0) AND NOT PAGEMODE(1) AND BUSD(5).PIN));
+RAMD(2) <= RAMD_I(2) when RAMD_OE(2) = '1' else 'Z';
+RAMD_OE(2) <= $OpTx$RAMWE_OBUF$Q_INV$62;
+
+
+RAMD_I(3) <= ((NOT PAGEMODE(2) AND BUSD(4).PIN)
+	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND ARDD(4).PIN)
+	OR (PAGEMODE(2) AND PAGEMODE(1) AND ARDD(4).PIN)
+	OR (PAGEMODE(0) AND NOT PAGEMODE(1) AND BUSD(4).PIN));
+RAMD(3) <= RAMD_I(3) when RAMD_OE(3) = '1' else 'Z';
+RAMD_OE(3) <= $OpTx$RAMWE_OBUF$Q_INV$62;
+
+
+RAMD_I(4) <= ((NOT PAGEMODE(2) AND BUSD(3).PIN)
+	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND ARDD(3).PIN)
+	OR (PAGEMODE(2) AND PAGEMODE(1) AND ARDD(3).PIN)
+	OR (PAGEMODE(0) AND NOT PAGEMODE(1) AND BUSD(3).PIN));
+RAMD(4) <= RAMD_I(4) when RAMD_OE(4) = '1' else 'Z';
+RAMD_OE(4) <= $OpTx$RAMWE_OBUF$Q_INV$62;
+
+
+RAMD_I(5) <= ((NOT PAGEMODE(2) AND BUSD(2).PIN)
+	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND ARDD(2).PIN)
+	OR (PAGEMODE(2) AND PAGEMODE(1) AND ARDD(2).PIN)
+	OR (PAGEMODE(0) AND NOT PAGEMODE(1) AND BUSD(2).PIN));
+RAMD(5) <= RAMD_I(5) when RAMD_OE(5) = '1' else 'Z';
+RAMD_OE(5) <= $OpTx$RAMWE_OBUF$Q_INV$62;
+
+
+RAMD_I(6) <= ((NOT PAGEMODE(2) AND BUSD(1).PIN)
+	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND ARDD(1).PIN)
+	OR (PAGEMODE(2) AND PAGEMODE(1) AND ARDD(1).PIN)
+	OR (PAGEMODE(0) AND NOT PAGEMODE(1) AND BUSD(1).PIN));
+RAMD(6) <= RAMD_I(6) when RAMD_OE(6) = '1' else 'Z';
+RAMD_OE(6) <= $OpTx$RAMWE_OBUF$Q_INV$62;
+
+
+RAMD_I(7) <= ((NOT PAGEMODE(2) AND BUSD(0).PIN)
+	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND ARDD(0).PIN)
+	OR (PAGEMODE(2) AND PAGEMODE(1) AND ARDD(0).PIN)
+	OR (PAGEMODE(0) AND NOT PAGEMODE(1) AND BUSD(0).PIN));
+RAMD(7) <= RAMD_I(7) when RAMD_OE(7) = '1' else 'Z';
+RAMD_OE(7) <= $OpTx$RAMWE_OBUF$Q_INV$62;
+
+
+RAMOE <= ((NOT PAGEMODE(2) AND PSEN)
+	OR (PAGEMODE(2) AND NOT PAGEMODE(0) AND ARDOE)
+	OR (PAGEMODE(2) AND PAGEMODE(1) AND ARDOE)
+	OR (PAGEMODE(0) AND NOT P11 AND NOT PAGEMODE(1) AND PSEN)
+	OR (PAGEMODE(0) AND NOT EXTRAM AND NOT PAGEMODE(1) AND PSEN));
+
+
+RAMWE <= NOT (((PAGEMODE(2) AND NOT PAGEMODE(0) AND NOT ARDWE)
+	OR (PAGEMODE(2) AND NOT ARDWE AND PAGEMODE(1))));
+
+FDCPE_bankvp0: FDCPE port map (bankvp(0),BUSD(0).PIN,bankvp_C(0),'0','0');
+bankvp_C(0) <= NOT ((BUSA(7) AND NOT P14 AND NOT BUSWR));
+
+FDCPE_bankvp1: FDCPE port map (bankvp(1),BUSD(1).PIN,bankvp_C(1),'0','0');
+bankvp_C(1) <= NOT ((BUSA(7) AND NOT P14 AND NOT BUSWR));
+
+FDCPE_bankvp2: FDCPE port map (bankvp(2),BUSD(2).PIN,bankvp_C(2),'0','0');
+bankvp_C(2) <= NOT ((BUSA(7) AND NOT P14 AND NOT BUSWR));
+
+FDCPE_bankvp3: FDCPE port map (bankvp(3),BUSD(3).PIN,bankvp_C(3),'0','0');
+bankvp_C(3) <= NOT ((BUSA(7) AND NOT P14 AND NOT BUSWR));
+
+FDCPE_bankvp4: FDCPE port map (bankvp(4),BUSD(4).PIN,bankvp_C(4),'0','0');
+bankvp_C(4) <= NOT ((BUSA(7) AND NOT P14 AND NOT BUSWR));
+
+FDCPE_bankvp5: FDCPE port map (bankvp(5),BUSD(5).PIN,bankvp_C(5),'0','0');
+bankvp_C(5) <= NOT ((BUSA(7) AND NOT P14 AND NOT BUSWR));
+
+FDCPE_bankvp6: FDCPE port map (bankvp(6),BUSD(6).PIN,bankvp_C(6),'0','0');
+bankvp_C(6) <= NOT ((BUSA(7) AND NOT P14 AND NOT BUSWR));
+
+FDCPE_bankvp7: FDCPE port map (bankvp(7),BUSD(7).PIN,bankvp_C(7),'0','0');
+bankvp_C(7) <= NOT ((BUSA(7) AND NOT P14 AND NOT BUSWR));
+
+Register Legend:
+ FDCPE (Q,D,C,CLR,PRE,CE); 
+ FTCPE (Q,D,C,CLR,PRE,CE); 
+ LDCP  (Q,D,G,CLR,PRE); 
+
+******************************  Device Pin Out *****************************
+
+Device : XC95144XL-10-TQ100
+
+
+   --------------------------------------------------  
+  /100 98  96  94  92  90  88  86  84  82  80  78  76  \
+ |   99  97  95  93  91  89  87  85  83  81  79  77    |
+ | 1                                               75  | 
+ | 2                                               74  | 
+ | 3                                               73  | 
+ | 4                                               72  | 
+ | 5                                               71  | 
+ | 6                                               70  | 
+ | 7                                               69  | 
+ | 8                                               68  | 
+ | 9                                               67  | 
+ | 10                                              66  | 
+ | 11                                              65  | 
+ | 12                                              64  | 
+ | 13              XC95144XL-10-TQ100              63  | 
+ | 14                                              62  | 
+ | 15                                              61  | 
+ | 16                                              60  | 
+ | 17                                              59  | 
+ | 18                                              58  | 
+ | 19                                              57  | 
+ | 20                                              56  | 
+ | 21                                              55  | 
+ | 22                                              54  | 
+ | 23                                              53  | 
+ | 24                                              52  | 
+ | 25                                              51  | 
+ |   27  29  31  33  35  37  39  41  43  45  47  49    |
+  \26  28  30  32  34  36  38  40  42  44  46  48  50  /
+   --------------------------------------------------  
+
+
+Pin Signal                         Pin Signal                        
+No. Name                           No. Name                          
+  1 RAMA<14>                         51 VCC                           
+  2 RAMA<12>                         52 BUSA<1>                       
+  3 RAMWE                            53 BUSD<5>                       
+  4 RAMA<7>                          54 BUSA<0>                       
+  5 VCC                              55 BUSD<4>                       
+  6 RAMA<13>                         56 PSEN                          
+  7 RAMA<6>                          57 VCC                           
+  8 RAMA<8>                          58 BUSD<3>                       
+  9 RAMA<5>                          59 EXTRAM                        
+ 10 RAMA<9>                          60 BUSD<2>                       
+ 11 RAMA<4>                          61 BUSWR                         
+ 12 RAMA<11>                         62 GND                           
+ 13 RAMA<3>                          63 BUSD<1>                       
+ 14 RAMOE                            64 BUSD<0>                       
+ 15 RAMA<2>                          65 T0                            
+ 16 RAMA<10>                         66 ARDD<7>                       
+ 17 RAMA<1>                          67 ARDD<6>                       
+ 18 RAMCS                            68 ARDD<5>                       
+ 19 RAMA<0>                          69 GND                           
+ 20 RAMD<7>                          70 ARDD<4>                       
+ 21 GND                              71 ARDD<3>                       
+ 22 RAMD<0>                          72 ARDD<2>                       
+ 23 RAMD<6>                          73 ARDD<1>                       
+ 24 RAMD<1>                          74 ARDD<0>                       
+ 25 RAMD<5>                          75 GND                           
+ 26 VCC                              76 PAGEMODE<0>                   
+ 27 RAMD<2>                          77 PAGEMODE<1>                   
+ 28 RAMD<4>                          78 PAGEMODE<2>                   
+ 29 RAMD<3>                          79 ARDWE                         
+ 30 BUSA<9>                          80 ARDOE                         
+ 31 GND                              81 ARDA<14>                      
+ 32 BUSA<8>                          82 ARDA<13>                      
+ 33 BUSA<11>                         83 TDO                           
+ 34 BUSA<6>                          84 GND                           
+ 35 P10                              85 ARDA<12>                      
+ 36 BUSA<7>                          86 ARDA<11>                      
+ 37 P11                              87 ARDA<10>                      
+ 38 VCC                              88 VCC                           
+ 39 BUSA<5>                          89 ARDA<9>                       
+ 40 P14                              90 ARDA<8>                       
+ 41 BUSA<4>                          91 ARDA<7>                       
+ 42 BUSA<10>                         92 ARDA<6>                       
+ 43 BUSA<3>                          93 ARDA<5>                       
+ 44 GND                              94 ARDA<4>                       
+ 45 TDI                              95 ARDA<3>                       
+ 46 BUSD<7>                          96 ARDA<2>                       
+ 47 TMS                              97 ARDA<1>                       
+ 48 TCK                              98 VCC                           
+ 49 BUSA<2>                          99 ARDA<0>                       
+ 50 BUSD<6>                         100 GND                           
+
+
+Legend :  NC  = Not Connected, unbonded pin
+         PGND = Unused I/O configured as additional Ground pin
+         TIE  = Unused I/O floating -- must tie to VCC, GND or other signal
+         KPR  = Unused I/O with weak keeper (leave unconnected)
+         VCC  = Dedicated Power Pin
+         GND  = Dedicated Ground Pin
+         TDI  = Test Data In, JTAG pin
+         TDO  = Test Data Out, JTAG pin
+         TCK  = Test Clock, JTAG pin
+         TMS  = Test Mode Select, JTAG pin
+  PROHIBITED  = User reserved pin
+****************************  Compiler Options  ****************************
+
+Following is a list of all global compiler options used by the fitter run.
+
+Device(s) Specified                         : xc95144xl-10-TQ100
+Optimization Method                         : SPEED
+Multi-Level Logic Optimization              : ON
+Ignore Timing Specifications                : OFF
+Default Register Power Up Value             : LOW
+Keep User Location Constraints              : ON
+What-You-See-Is-What-You-Get                : OFF
+Exhaustive Fitting                          : OFF
+Keep Unused Inputs                          : OFF
+Slew Rate                                   : FAST
+Power Mode                                  : STD
+Ground on Unused IOs                        : OFF
+Set I/O Pin Termination                     : KEEPER
+Global Clock Optimization                   : ON
+Global Set/Reset Optimization               : ON
+Global Ouput Enable Optimization            : ON
+Input Limit                                 : 54
+Pterm Limit                                 : 25
