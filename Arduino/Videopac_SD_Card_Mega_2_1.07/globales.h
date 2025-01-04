@@ -1,6 +1,4 @@
-
-
-
+#define SDFAT
 #ifdef SH1106
 U8G2_SH1106_128X64_NONAME_F_HW_I2C u8g2(U8G2_R2, /* reset=*/ U8X8_PIN_NONE);
 char disp[]="SH1106";
@@ -67,7 +65,7 @@ char str_GAMEOVER[] = "GAME OVER";
 
 // byte pagging = PAG_P10_P11;
 
-TMRpcm tmrpcm;   // create an object for use in this sketch
+//TMRpcm tmrpcm;   // create an object for use in this sketch
 
 boolean showVolt = false;
 
@@ -148,4 +146,4 @@ int num_files = 0;
 int num_files_nodir = 0;
 long int inicio = 0;
 
-TMRpcm audio;   // create an object for use in this sketch
+//TMRpcm audio;   // create an object for use in this sketch

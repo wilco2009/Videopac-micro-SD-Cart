@@ -14,7 +14,7 @@
 #include <Wire.h>
 #endif
 #define SD_ChipSelectPin 53 //SD_CS_PIN  
-#include <TMRpcm.h>           
+//#include <TMRpcm.h>           
 
 // #include "bitlash.h"
 #include "globales.h"

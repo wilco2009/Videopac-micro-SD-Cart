@@ -627,8 +627,8 @@ void rebuild_ini_file(void){
   }
 #endif
   iniFile.seekSet(0);
-  dataFile.timestamp(&iniFile);
-  CRCFile.timestamp(&iniFile);
+  //dataFile.timestamp(&iniFile);
+  //CRCFile.timestamp(&iniFile);
 //  sprintf(sCRC, "%08lX", CRC32);
   found = false;
   len = iniFile.fgets(str1, MAX_FILENAME_LEN, "\n");
